@@ -1,0 +1,12 @@
+package com.cybage.learnCrudApp.service;
+
+import java.util.List;
+
+import com.cybage.learnCrudApp.entity.Course;
+
+
+public interface courseService {
+	public List<Course> getAllCourses();
+
+	
+}

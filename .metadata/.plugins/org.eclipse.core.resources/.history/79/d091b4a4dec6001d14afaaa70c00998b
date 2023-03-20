@@ -1,0 +1,5 @@
+package com.cybage.learnCrudApp.service;
+
+public interface courseService {
+
+}

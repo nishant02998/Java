@@ -1,0 +1,21 @@
+package com.cybage.learnCrudApp.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cybage.learnCrudApp.entity.Course;
+import com.cybage.learnCrudApp.service.courseService;
+
+@RestController
+public class CRUD_Controllers {
+	@Autowired
+	private courseService service;
+
+	@GetMapping("/getAllCourses")
+	public List<Course> getAllCourses(){
+		return service.getAllCourses();
+	}
+}

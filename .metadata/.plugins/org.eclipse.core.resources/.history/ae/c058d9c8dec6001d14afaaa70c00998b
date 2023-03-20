@@ -1,0 +1,12 @@
+package com.cybage.learnCrudApp.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.cybage.learnCrudApp.entity.Course;
+
+@Service
+public interface courseService {
+	public List<Course> getAllCourses();
+}

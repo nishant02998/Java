@@ -1,0 +1,41 @@
+package com.cybage.learnCrudApp.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.cybage.learnCrudApp.entity.Course;
+
+@Service
+public class courseServiceImpl implements courseService {
+	
+	List<Course> list;
+	
+	
+	public courseServiceImpl() {
+		list = new ArrayList<>();
+		list.add(new Course(1,"JAVA","JAVA"));
+		c.add(new Course(2,"C++","C++"));
+		c.add(new Course(3,"C","C"));
+	}
+
+
+	@Override
+	public List<Course> getAllCourses() {
+		return c;
+	}
+
+
+
+
+
+	@Override
+	public Course getCourse(long l) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+}
